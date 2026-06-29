@@ -441,9 +441,16 @@
       <div class="proj reveal">
         <div class="tag">FEATURED · AWS · TERRAFORM</div>
         <h3>Scalable Web Application on AWS</h3>
-        <p>A fully automated, production-grade <strong>three-tier</strong> web application on AWS built with Terraform (<strong>73 resources</strong>), following the AWS Well-Architected Framework. Multi-AZ VPC with public/private subnets, WAF-protected ALB, Auto Scaling Group (2–6 EC2), RDS PostgreSQL in private subnets, IAM least-privilege roles, and CloudWatch observability with 6 alarms and SNS notifications.</p>
+        <p><strong>Designed and deployed</strong> a fully automated, production-grade three-tier web application on AWS using Terraform (<strong>73 resources</strong> in a single <code>terraform apply</code>), following AWS Well-Architected Framework principles.</p>
+        <p style="color:var(--muted); font-size:0.9rem; line-height:1.5;"><strong style="color:var(--text);">Infrastructure highlights:</strong><br>
+        • <strong>Networking:</strong> VPC with 6 subnets across 2 AZs (public, private-app, private-db)<br>
+        • <strong>Compute:</strong> EC2 Auto Scaling Group (2–6 instances) behind WAF-protected ALB<br>
+        • <strong>Database:</strong> RDS PostgreSQL 16 in private subnets with automated backups<br>
+        • <strong>Security:</strong> WAFv2, IAM least-privilege, Security Groups, CloudTrail audit logging<br>
+        • <strong>Observability:</strong> CloudWatch Dashboard (7 widgets), 6 alarms with SNS notifications<br>
+        • <strong>Storage:</strong> S3 for static assets, ALB logs, and CloudTrail logs</p>
         <div class="stack">
-          <span>Terraform</span><span>VPC</span><span>EC2 ASG</span><span>RDS</span><span>ALB</span><span>WAF</span><span>IAM</span><span>CloudWatch</span>
+          <span>Terraform</span><span>AWS</span><span>VPC</span><span>EC2</span><span>RDS</span><span>ALB</span><span>WAF</span><span>CloudWatch</span><span>CloudTrail</span><span>IAM</span><span>S3</span>
         </div>
         <div class="links">
           <a href="https://github.com/Tariqalshurify/aws-django-platform" target="_blank" rel="noopener">
