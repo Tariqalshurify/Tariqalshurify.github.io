@@ -1226,27 +1226,22 @@ section{
   makes the white caption readable.
 */
 
-.photo:after{
-
-  content:"";
-
+.photo figcaption{
   position:absolute;
+  z-index:2;
+  left:16px;
+  right:16px;
+  bottom:16px;
 
-  left:0;
-  right:0;
+  font-size:.76rem;
+  font-weight:700;
+  line-height:1.35;
 
-  top:0;
+  color:#ffffff;
 
-  height:78%;
-
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(3,7,13,.03) 42%,
-      rgba(3,7,13,.72) 100%
-    );
-
-  pointer-events:none;
+  text-shadow:
+    0 1px 5px
+    rgba(0,0,0,.65);
 }
 
 
